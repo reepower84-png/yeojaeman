@@ -157,9 +157,11 @@ body {
   list-style: none;
   display: flex; flex-direction: column;
   gap: 14px;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 56px;
+  padding-right: clamp(20px, 6vw, 80px);
   font-family: 'Noto Serif KR', serif;
+  text-align: right;
   animation: fadeUp 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s both;
 }
 
@@ -538,7 +540,7 @@ body {
   .footer-sep { display: none; }
   .eyebrow::before, .eyebrow::after { width: 16px; }
   .hero-inner { margin-bottom: 64px; }
-  .career { gap: 12px; margin-top: 44px; padding: 0 12px; }
+  .career { gap: 12px; margin-top: 44px; padding: 0 16px 0 12px; }
   .career li { letter-spacing: 1.2px; gap: 10px; }
   .social-list { gap: 22px; }
 }
@@ -553,6 +555,7 @@ body {
   .hero-title { letter-spacing: 12px; margin-left: 12px; }
   .cph-accent { font-size: 11px; letter-spacing: 5px; }
   .cph-main { letter-spacing: 5px; }
+  .career { padding: 0 12px 0 8px; }
   .career li { font-size: 13px; letter-spacing: 0.5px; gap: 8px; }
   .career .tag-now,
   .career .tag-prev,
